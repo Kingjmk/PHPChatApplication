@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/chat.js"></script>
+    <title>PHP Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="loginname"style="text-align:right;width:80%;"></h1>
+        <a href="../">Home</a>
+        <a href="../chat.html">Chat</a>
+
+        <form id="logout">
+            <input type="submit" class="submit" value="Logout">
+        </form>
+
+
+        <div class="contactsbody left">
+                
+            <form class="contacts" id="conbody" name="contacts">
+                  
+                
+            </form>
+            <input type="submit" name="submit" class="submit" form="conbody" value="Change Chat">
+        </div>
+
+        <div class="chatbody right">
+            <div class="messages" id="msgbody">
+                
+        </div>
+
+            <form id="sendmessageform">
+                <input type="text" name="message" id="u1" placeholder="message-here" style="display:inline-block;width:70%;">
+                <input type="submit" class="submit" value="Send" style="display:inline-block;width:20%;">
+            </form>
+        </div>
+
+        <p id="err"></p>
+
+    </div>
+</body>
+</html>

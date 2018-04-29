@@ -9,6 +9,14 @@ body {
     min-width:400px;
 }
 
+.contactsbody {
+    border-bottom:3px solid black;
+}
+.contactsbody input {
+    display:inline;
+    height:2vh;
+    width:50px;
+}
 
 form {
     width:70%;

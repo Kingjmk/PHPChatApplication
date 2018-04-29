@@ -5,7 +5,7 @@ $("#loginform").submit(function (e){
     e.preventDefault(); 
     $.ajax({
         type: 'post',
-        url: '../main.php',
+        url: '../PHPstuff/login.php',
         data: values,
         success: function () {
             updateloginname();
@@ -21,7 +21,7 @@ $("#regform").submit(function (e){
     e.preventDefault(); 
     $.ajax({
         type: 'post',
-        url: '../main.php',
+        url: '../PHPstuff/Register.php',
         data: values,
         success: function () {
             updateErr();
@@ -36,7 +36,7 @@ $("#logout").submit(function (e){
     e.preventDefault(); 
     $.ajax({
         type: 'post',
-        url: '../main.php',
+        url: '../PHPstuff/logout.php',
         data: values,
         success: function () {
             updateloginname();
@@ -61,6 +61,7 @@ function updateErr() {
     var err= getCookie("err");
 
     console.log(err.length + "/" + err);
+    err = err.split('+').join(' ');
     $("#err").html("this is an error message : " + err);
 }
 
